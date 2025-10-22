@@ -1,0 +1,84 @@
+<!-- a.foresty Card/Community 컴포넌트 -->
+
+<!-- 기본 Card/Community (Default 상태) -->
+<div class="card-community card-community--default" data-card="card-1">
+  <div class="card-community__image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');"></div>
+  <div class="card-community__hover">
+    <div class="card-community__text">
+      <div class="card-community__content">
+        도심의 소음으로부터 벗어나 온전한 휴식을 누릴 수 있는 공간입니다. 인피니티 풀에서는 계절의 변화를 느끼며 여유로운 수영을, 프라이빗 사우나와 릴렉세이션 룸에서는 지친 몸의 피로를 완벽하게 해소할 수 있습니다.
+      </div>
+    </div>
+    <div class="card-community__button-area">
+      <button class="card-community__button" aria-label="카드 확장">
+        <div class="card-community__icon">
+          <div class="card-community__icon-line card-community__icon-line--horizontal"></div>
+          <div class="card-community__icon-line card-community__icon-line--vertical"></div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Click 상태 Card/Community -->
+<div class="card-community card-community--click" data-card="card-2">
+  <div class="card-community__image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');"></div>
+  <div class="card-community__hover">
+    <div class="card-community__text">
+      <div class="card-community__content">
+        도심의 소음으로부터 벗어나 온전한 휴식을 누릴 수 있는 공간입니다. 인피니티 풀에서는 계절의 변화를 느끼며 여유로운 수영을, 프라이빗 사우나와 릴렉세이션 룸에서는 지친 몸의 피로를 완벽하게 해소할 수 있습니다.
+      </div>
+    </div>
+    <div class="card-community__button-area">
+      <button class="card-community__button" aria-label="카드 축소">
+        <div class="card-community__icon">
+          <div class="card-community__icon-line card-community__icon-line--horizontal"></div>
+          <div class="card-community__icon-line card-community__icon-line--vertical" style="visibility: hidden;"></div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Large 사이즈 Card/Community -->
+<div class="card-community card-community--large card-community--default" data-card="card-3">
+  <div class="card-community__image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');"></div>
+  <div class="card-community__hover">
+    <div class="card-community__text">
+      <div class="card-community__content">
+        도심의 소음으로부터 벗어나 온전한 휴식을 누릴 수 있는 공간입니다. 인피니티 풀에서는 계절의 변화를 느끼며 여유로운 수영을, 프라이빗 사우나와 릴렉세이션 룸에서는 지친 몸의 피로를 완벽하게 해소할 수 있습니다.
+      </div>
+    </div>
+    <div class="card-community__button-area">
+      <button class="card-community__button" aria-label="카드 확장">
+        <div class="card-community__icon">
+          <div class="card-community__icon-line card-community__icon-line--horizontal"></div>
+          <div class="card-community__icon-line card-community__icon-line--vertical"></div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Small 사이즈 Card/Community -->
+<div class="card-community card-community--small card-community--default" data-card="card-4">
+  <div class="card-community__image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');"></div>
+  <div class="card-community__hover">
+    <div class="card-community__text">
+      <div class="card-community__content">
+        도심의 소음으로부터 벗어나 온전한 휴식을 누릴 수 있는 공간입니다.
+      </div>
+    </div>
+    <div class="card-community__button-area">
+      <button class="card-community__button" aria-label="카드 확장">
+        <div class="card-community__icon">
+          <div class="card-community__icon-line card-community__icon-line--horizontal"></div>
+          <div class="card-community__icon-line card-community__icon-line--vertical"></div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 동적 Card/Community (JavaScript로 생성) -->
+<div class="card-community" id="dynamic-card" data-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-content="동적으로 생성된 카드입니다."></div>
