@@ -1,0 +1,347 @@
+/* a.foresty 타이포그래피 시스템 */
+
+/* 폰트 패밀리 정의 */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+/* 폰트 패밀리 변수 */
+:root {
+  --font-aboreto: 'Aboreto', cursive;
+  --font-arsenal: 'Arsenal', sans-serif;
+  --font-pretendard: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  
+  /* 색상 변수 */
+  --color-black-100: #161616;
+  --color-text-primary: #161616;
+}
+
+/* A.FORESTY/ABORETO 폰트 스타일 */
+
+/* Display XXL - 히어로 메인 텍스트 */
+.typography-display-xxl {
+  font-family: var(--font-aboreto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 224px;
+  line-height: 90%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Display XL */
+.typography-display-xl {
+  font-family: var(--font-aboreto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Display L */
+.typography-display-l {
+  font-family: var(--font-aboreto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Display M */
+.typography-display-m {
+  font-family: var(--font-aboreto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Title M */
+.typography-title-m {
+  font-family: var(--font-aboreto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* A.FORESTY/Arsenal 폰트 스타일 */
+
+/* Title XL */
+.typography-title-xl {
+  font-family: var(--font-arsenal);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Title L */
+.typography-title-l {
+  font-family: var(--font-arsenal);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Title M */
+.typography-title-m-arsenal {
+  font-family: var(--font-arsenal);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Title S */
+.typography-title-s {
+  font-family: var(--font-arsenal);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Title XS */
+.typography-title-xs {
+  font-family: var(--font-arsenal);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--color-black-100);
+}
+
+/* Body M */
+.typography-body-m-arsenal {
+  font-family: var(--font-arsenal);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* A.FORESTY/Pretendard 폰트 스타일 */
+
+/* Heading L(M) */
+.typography-heading-l {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Heading M(M) */
+.typography-heading-m {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Title M(M) */
+.typography-title-m-pretendard {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Body L(R) */
+.typography-body-l {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Body M(R) */
+.typography-body-m {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Body S(M) */
+.typography-body-s-medium {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* Body S(R) */
+.typography-body-s {
+  font-family: var(--font-pretendard);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--color-black-100);
+}
+
+/* 반응형 타이포그래피 */
+
+/* 태블릿 (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .typography-display-xxl {
+    font-size: 180px;
+  }
+  
+  .typography-display-xl {
+    font-size: 96px;
+  }
+  
+  .typography-display-l {
+    font-size: 80px;
+  }
+  
+  .typography-display-m {
+    font-size: 58px;
+  }
+  
+  .typography-title-xl {
+    font-size: 38px;
+  }
+  
+  .typography-title-l {
+    font-size: 26px;
+  }
+  
+  .typography-heading-l {
+    font-size: 38px;
+  }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px) {
+  .typography-display-xxl {
+    font-size: 120px;
+    line-height: 95%;
+  }
+  
+  .typography-display-xl {
+    font-size: 64px;
+  }
+  
+  .typography-display-l {
+    font-size: 56px;
+  }
+  
+  .typography-display-m {
+    font-size: 48px;
+  }
+  
+  .typography-title-xl {
+    font-size: 32px;
+  }
+  
+  .typography-title-l {
+    font-size: 24px;
+  }
+  
+  .typography-title-m-arsenal {
+    font-size: 22px;
+  }
+  
+  .typography-title-s {
+    font-size: 20px;
+  }
+  
+  .typography-title-xs {
+    font-size: 18px;
+  }
+  
+  .typography-heading-l {
+    font-size: 32px;
+  }
+  
+  .typography-heading-m {
+    font-size: 20px;
+  }
+  
+  .typography-body-l {
+    font-size: 20px;
+  }
+  
+  .typography-body-m {
+    font-size: 18px;
+  }
+  
+  .typography-body-s-medium,
+  .typography-body-s {
+    font-size: 14px;
+  }
+}
+
+/* 매우 작은 모바일 (480px 이하) */
+@media (max-width: 480px) {
+  .typography-display-xxl {
+    font-size: 80px;
+  }
+  
+  .typography-display-xl {
+    font-size: 48px;
+  }
+  
+  .typography-display-l {
+    font-size: 40px;
+  }
+  
+  .typography-display-m {
+    font-size: 36px;
+  }
+  
+  .typography-title-xl {
+    font-size: 28px;
+  }
+  
+  .typography-heading-l {
+    font-size: 28px;
+  }
+}
