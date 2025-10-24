@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김소피 - Writer - Technova Place</title>
+    <link rel="stylesheet" href="styles.css?v=8.4">
+    <link rel="stylesheet" href="components/read-more-button.css">
+    <link rel="stylesheet" href="css/writer-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    
+    <!-- Hubot Sans Font -->
+    <style>
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Regular.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Medium.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-SemiBold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Bold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Grid -->
+    <div class="background-grid">
+        <div class="vertical-line"></div>
+        <div class="vertical-line-background"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Technova Place">
+                    <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24" />
+                </a>
+                <nav class="nav">
+                    <!-- Desktop Navigation -->
+                    <div class="nav-desktop">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="nav-menu-group">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a href="#" class="menu-link blog-menu" aria-haspopup="true" aria-expanded="false">
+                                        <span>Blog</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                            <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <div class="blog-dropdown">
+                                        <a href="index.html" class="blog-dropdown-item">All categories</a>
+                                        <a href="ai-machine-learning.html" class="blog-dropdown-item">AI & machine learning</a>
+                                        <a href="cybersecurity.html" class="blog-dropdown-item">Cybersecurity</a>
+                                        <a href="cloud-computing.html" class="blog-dropdown-item">Cloud computing</a>
+                                        <a href="data-analytics.html" class="blog-dropdown-item">Data & analytics</a>
+                                        <a href="team.html" class="blog-dropdown-item">Team</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="menu-link contact-menu">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-actions">
+                                <button class="cta-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation -->
+                    <div class="nav-mobile">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+                            <img src="asset/icon/Property 1=menu.svg" alt="메뉴" class="mobile-icon">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="header-container">
+                    <div class="header-content">
+                        <a href="index.html" class="logo" aria-label="Technova Place">
+                            <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24">
+                        </a>
+                        <nav class="nav">
+                            <div class="nav-mobile">
+                                <button class="icon-button search-btn" aria-label="검색">
+                                    <img src="asset/icon/Property 1=search2.svg" alt="검색" class="mobile-icon">
+                                </button>
+                                <button class="mobile-menu-close" aria-label="메뉴 닫기">
+                                    <img src="asset/icon/Property 1=close.svg" alt="닫기" class="mobile-close-icon">
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-sections">
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-item blog-dropdown-trigger">
+                            <span>Blog</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                                <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="mobile-blog-dropdown">
+                            <a href="index.html" class="mobile-menu-item">All categories</a>
+                            <a href="ai-machine-learning.html" class="mobile-menu-item">AI & machine learning</a>
+                            <a href="cybersecurity.html" class="mobile-menu-item">Cybersecurity</a>
+                            <a href="cloud-computing.html" class="mobile-menu-item">Cloud computing</a>
+                            <a href="data-analytics.html" class="mobile-menu-item">Data & analytics</a>
+                            <a href="team.html" class="mobile-menu-item">Team</a>
+                        </div>
+                        <a href="contact.html" class="mobile-menu-item">Contact</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-footer">
+                    <button class="mobile-subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <!-- Top 영역: 로고와 닫기 버튼 -->
+            <div class="search-top">
+                <div class="search-top-content">
+                    <div class="search-logo">
+                        <img src="asset/Logo.svg" alt="technova place" class="search-logo-img">
+                    </div>
+                    <button class="search-close-btn" aria-label="검색창 닫기">
+                        <img src="asset/icon/Property 1=close.svg" alt="닫기" width="24" height="24">
+                    </button>
+                </div>
+            </div>
+            <!-- Search + List 영역: 검색창과 검색결과 -->
+            <div class="search-main">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="주제나 키워드를 검색하세요" autocomplete="off" style="font-family: 'Input Mixed Font', 'Hubot Sans', 'Pretendard Variable', sans-serif;">
+                </div>
+                <!-- 검색어가 없을 때: Recent posts -->
+                <div class="search-recent" id="searchRecent">
+                    <h3 class="search-section-title">Recent posts</h3>
+                    <div class="search-results-list">
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_1.jpg" alt="Data & analytics">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Data & analytics</span>
+                                <h4 class="search-result-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_2.jpg" alt="Cloud computing">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Cloud computing</span>
+                                <h4 class="search-result-title">멀티 클라우드 전략 완전 해부</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_3.jpg" alt="Team">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Team</span>
+                                <h4 class="search-result-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 검색어가 있을 때: 검색 결과 -->
+                <div class="search-results" id="searchResults" style="display: none;">
+                    <h3 class="search-section-title">Search results</h3>
+                    <div class="search-results-list" id="searchResultsList">
+                        <!-- 검색 결과가 여기에 동적으로 추가됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="categories-container">
+            <div class="tabs">
+                <a href="index.html" class="tab">All categories</a>
+                <a href="ai-machine-learning.html" class="tab">AI & machine learning</a>
+                <a href="cybersecurity.html" class="tab">Cybersecurity</a>
+                <a href="cloud-computing.html" class="tab">Cloud computing</a>
+                <a href="data-analytics.html" class="tab">Data & analytics</a>
+                <a href="team.html" class="tab">Team</a>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="writer-detail-main">
+        <!-- Writer Profile Section -->
+        <section class="writer-profile-section">
+            <div class="container">
+                <div class="writer-profile">
+                    <div class="writer-avatar">
+                        <img src="image/profile1.png" alt="김소피" class="writer-image">
+                    </div>
+                    <div class="writer-info">
+                        <h1 class="writer-name">김소피</h1>
+                        <p class="writer-title">AI윤리 포럼 운영자</p>
+                        <p class="writer-description">
+                            테크노바의 보안 엔지니어로, 기업 보안 전략과 제로 트러스트 아키텍처 구현에 전문성을 가지고 있습니다. 
+                            다양한 사이버 보안 위협에 대한 대응 방안과 최신 보안 트렌드에 대한 인사이트를 공유합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+
+        <!-- Writer Posts Section -->
+        <section class="writer-posts-section">
+            <div class="container">
+                <h2 class="section-title">Articles by writer</h2>
+                <div class="writer-posts-list">
+                    <a href="article-detail.html" class="writer-post">
+                        <div class="writer-post-image">
+                            <img src="image/image1.jpg" alt="Cybersecurity">
+                        </div>
+                        <div class="writer-post-content">
+                            <div class="writer-post-info">
+                                <span class="writer-post-category">Cybersecurity</span>
+                                <h3 class="writer-post-title">오늘날의 기업이 보안 전략을 근본적으로 재정의해야 하는 이유</h3>
+                            </div>
+                            <div class="writer-post-meta">
+                                <span class="writer-post-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="writer-post">
+                        <div class="writer-post-image">
+                            <img src="image/image2.jpg" alt="Cybersecurity">
+                        </div>
+                        <div class="writer-post-content">
+                            <div class="writer-post-info">
+                                <span class="writer-post-category">Cybersecurity</span>
+                                <h3 class="writer-post-title">제로 트러스트 보안 모델의 실제 구현 사례</h3>
+                            </div>
+                            <div class="writer-post-meta">
+                                <span class="writer-post-date">2025년 5월 15일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="writer-post">
+                        <div class="writer-post-image">
+                            <img src="image/image3.jpg" alt="Cybersecurity">
+                        </div>
+                        <div class="writer-post-content">
+                            <div class="writer-post-info">
+                                <span class="writer-post-category">Cybersecurity</span>
+                                <h3 class="writer-post-title">클라우드 환경에서의 보안 위협과 대응 방안</h3>
+                            </div>
+                            <div class="writer-post-meta">
+                                <span class="writer-post-date">2025년 4월 22일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="writer-post">
+                        <div class="writer-post-image">
+                            <img src="image/image4.jpg" alt="Cybersecurity">
+                        </div>
+                        <div class="writer-post-content">
+                            <div class="writer-post-info">
+                                <span class="writer-post-category">Cybersecurity</span>
+                                <h3 class="writer-post-title">AI 기반 보안 솔루션의 현재와 미래</h3>
+                            </div>
+                            <div class="writer-post-meta">
+                                <span class="writer-post-date">2025년 3월 10일</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+    </main>
+
+        <!-- Footer Component will be inserted here by footer.js -->
+
+    <script type="module" src="script.js"></script>
+    <script src="js/font-mixer.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/writer-detail.js"></script>
+</body>
+</html>

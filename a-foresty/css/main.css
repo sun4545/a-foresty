@@ -312,6 +312,512 @@ body {
 }
 
 
+/* 브랜드 스토리 섹션 01 - Figma 디자인 기반 */
+.brand-story-section-01 {
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* 위쪽 여유 공간 추가 */
+}
+
+.brand-story-01-container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 48px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 상단 헤더 */
+.brand-story-01-header {
+    padding: 48px 0;
+    text-align: left;
+}
+
+.brand-story-01-subtitle {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: #161616;
+    margin: 0;
+    max-width: 230px;
+}
+
+/* 스크롤 컨테이너 */
+.brand-story-01-scroll-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 680px; /* 1920 기준 680px */
+    width: 100%;
+}
+
+.brand-story-01-image-list {
+    display: flex;
+    gap: 120px; /* 1920px 기준 120px 간격 */
+    padding: 0;
+    will-change: transform;
+}
+
+/* 이미지 아이템 */
+.brand-story-01-image-item {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: flex-start;
+    height: 100%; /* 컨테이너 높이에 맞춤 */
+}
+
+.brand-story-01-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.brand-story-01-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* 680px 컨테이너에 맞춰 최대 높이 제한 */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.brand-story-01-image-item:hover .brand-story-01-image img {
+    transform: scale(1.05);
+}
+
+/* 각 이미지별 개별 스타일 - Figma 원본 크기 그대로 적용, 비율 유지, 상하 위치 자유 배치 */
+.brand-story-01-image-item--1 {
+    align-self: flex-start;
+    margin-top: 0px;
+}
+
+.brand-story-01-image-item--1 .brand-story-01-image {
+    width: 531px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--2 {
+    align-self: flex-end;
+    margin-top: 120px;
+}
+
+.brand-story-01-image-item--2 .brand-story-01-image {
+    width: 274px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--3 {
+    align-self: flex-start;
+    margin-top: 0px;
+}
+
+.brand-story-01-image-item--3 .brand-story-01-image {
+    width: 380px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--4 {
+    align-self: flex-end;
+    margin-top: 120px;
+}
+
+.brand-story-01-image-item--4 .brand-story-01-image {
+    width: 274px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--5 {
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.brand-story-01-image-item--5 .brand-story-01-image {
+    width: 532px; /* Figma 원본 크기 */
+    height: 381px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--6 {
+    align-self: flex-end;
+    margin-top: 115px;
+}
+
+.brand-story-01-image-item--6 .brand-story-01-image {
+    width: 380px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--7 {
+    align-self: flex-start;
+    margin-top: 0px;
+}
+
+.brand-story-01-image-item--7 .brand-story-01-image {
+    width: 220px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--8 {
+    align-self: flex-end;
+    margin-top: 120px;
+}
+
+.brand-story-01-image-item--8 .brand-story-01-image {
+    width: 516px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--9 {
+    align-self: flex-start;
+    margin-top: 35px;
+}
+
+.brand-story-01-image-item--9 .brand-story-01-image {
+    width: 574px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-image-item--10 {
+    align-self: flex-end;
+    margin-top: 92px;
+}
+
+.brand-story-01-image-item--10 .brand-story-01-image {
+    width: 274px; /* Figma 원본 크기 */
+    height: 380px; /* Figma 원본 크기 */
+}
+
+.brand-story-01-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.brand-story-01-title {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #161616;
+    margin: 0;
+}
+
+.brand-story-01-unit {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: -0.32px;
+    color: #161616;
+    opacity: 0.6;
+    margin: 0;
+}
+
+/* 하단 푸터 */
+.brand-story-01-footer {
+    padding: 48px 0;
+    text-align: right;
+}
+
+/* 우측 하단 메인 타이틀 오버레이 */
+.brand-story-01-main-title-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.brand-story-01-main-title {
+    font-family: 'Aboreto', serif;
+    font-size: 120px; /* Display L 크기 */
+    font-weight: 400;
+    line-height: 120px;
+    letter-spacing: -5px;
+    color: #161616;
+    margin: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Sticky 동작을 위한 스크롤 섹션 - 스타일 제거 */
+.brand-story-section-01.sticky {
+    /* sticky 스타일 제거 - JavaScript에서만 제어 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+    .brand-story-01-container {
+        padding: 0 32px;
+    }
+    
+    .brand-story-01-subtitle {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    /* 1200px 이하: 간격 90px로 조정 */
+    .brand-story-01-image-list {
+        gap: 90px;
+    }
+    
+    /* 반응형에서도 각 이미지의 비율 유지 (75% 축소) */
+    .brand-story-01-image-item--1 .brand-story-01-image {
+        width: 398px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--2 .brand-story-01-image {
+        width: 206px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--3 .brand-story-01-image {
+        width: 285px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--4 .brand-story-01-image {
+        width: 206px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--5 .brand-story-01-image {
+        width: 399px;
+        height: 286px;
+    }
+    
+    .brand-story-01-image-item--6 .brand-story-01-image {
+        width: 285px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--7 .brand-story-01-image {
+        width: 165px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--8 .brand-story-01-image {
+        width: 387px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--9 .brand-story-01-image {
+        width: 431px;
+        height: 285px;
+    }
+    
+    .brand-story-01-image-item--10 .brand-story-01-image {
+        width: 206px;
+        height: 285px;
+    }
+    
+    .brand-story-01-main-title {
+        font-size: 96px; /* 1200px 이하에서 80% 크기 */
+        line-height: 96px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-story-section-01 {
+        height: auto;
+        min-height: 800px;
+    }
+    
+    .brand-story-01-container {
+        padding: 0 20px;
+        gap: 32px;
+    }
+    
+    .brand-story-01-header {
+        padding: 32px 0;
+    }
+    
+    .brand-story-01-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 100%;
+    }
+    
+    /* 768px 이하: 간격 60px로 조정 */
+    .brand-story-01-image-list {
+        gap: 60px;
+    }
+    
+    /* 모바일에서도 각 이미지의 비율 유지 (56% 축소) */
+    .brand-story-01-image-item--1 .brand-story-01-image {
+        width: 297px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--2 .brand-story-01-image {
+        width: 153px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--3 .brand-story-01-image {
+        width: 213px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--4 .brand-story-01-image {
+        width: 153px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--5 .brand-story-01-image {
+        width: 298px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--6 .brand-story-01-image {
+        width: 213px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--7 .brand-story-01-image {
+        width: 123px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--8 .brand-story-01-image {
+        width: 289px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--9 .brand-story-01-image {
+        width: 321px;
+        height: 213px;
+    }
+    
+    .brand-story-01-image-item--10 .brand-story-01-image {
+        width: 153px;
+        height: 213px;
+    }
+    
+    .brand-story-01-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    
+    .brand-story-01-unit {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .brand-story-01-footer {
+        padding: 32px 0;
+    }
+    
+    .brand-story-01-main-title {
+        font-size: 72px; /* 768px 이하에서 60% 크기 */
+        line-height: 72px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-story-01-container {
+        padding: 0 16px;
+        gap: 24px;
+    }
+    
+    .brand-story-01-header {
+        padding: 24px 0;
+    }
+    
+    .brand-story-01-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    /* 480px 이하: 간격 40px로 조정 */
+    .brand-story-01-image-list {
+        gap: 40px;
+    }
+    
+    /* 작은 모바일에서도 각 이미지의 비율 유지 (45% 축소) */
+    .brand-story-01-image-item--1 .brand-story-01-image {
+        width: 239px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--2 .brand-story-01-image {
+        width: 123px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--3 .brand-story-01-image {
+        width: 171px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--4 .brand-story-01-image {
+        width: 123px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--5 .brand-story-01-image {
+        width: 239px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--6 .brand-story-01-image {
+        width: 171px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--7 .brand-story-01-image {
+        width: 99px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--8 .brand-story-01-image {
+        width: 232px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--9 .brand-story-01-image {
+        width: 258px;
+        height: 171px;
+    }
+    
+    .brand-story-01-image-item--10 .brand-story-01-image {
+        width: 123px;
+        height: 171px;
+    }
+    
+    .brand-story-01-title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .brand-story-01-unit {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .brand-story-01-footer {
+        padding: 24px 0;
+    }
+    
+    .brand-story-01-main-title {
+        font-size: 48px; /* 480px 이하에서 40% 크기 */
+        line-height: 48px;
+    }
+}
+
 /* 브랜드 스토리 섹션 */
 .brand-story-section {
     background: #ffffff;

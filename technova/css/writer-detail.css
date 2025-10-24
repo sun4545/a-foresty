@@ -1,0 +1,329 @@
+/* Writer Detail Page Styles */
+
+/* Writer Detail Main */
+.writer-detail-main {
+    background-color: transparent;
+}
+
+/* Writer Profile Section */
+.writer-profile-section {
+    padding: 100px 0 80px 0;
+    position: relative;
+}
+
+.writer-profile-section .deco-left,
+.writer-profile-section .deco-right {
+    display: none;
+}
+
+.writer-profile {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.writer-avatar {
+    margin-bottom: 24px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.writer-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.writer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+}
+
+.writer-name {
+    font-family: 'Hubot Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #161616;
+    line-height: 1.28;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.writer-title {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 15px;
+    color: #6F6F6F;
+    line-height: 1.28;
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.writer-description {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 15px;
+    color: #6F6F6F;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+}
+
+/* Writer Posts Section */
+.writer-posts-section {
+    padding: 64px 0 100px 0;
+    position: relative;
+}
+
+
+
+.writer-posts-list {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.writer-post {
+    background-color: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.writer-post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.writer-post-image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.writer-post-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.writer-post:hover .writer-post-image img {
+    transform: scale(1.05);
+}
+
+.writer-post-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.writer-post-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.writer-post-category {
+    display: inline-block;
+    font-family: 'Hubot Sans', 'Pretendard Variable', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #161616;
+    letter-spacing: -0.28px;
+    text-transform: none;
+}
+
+.writer-post-title {
+    font-family: 'Hubot Sans', 'Pretendard Variable', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.48px;
+    color: #161616;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.writer-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 500;
+}
+
+.writer-post-date {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+/* writer-post 링크 스타일 */
+.writer-post {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Author Name Link Styles */
+.author-name-link {
+    font-family: 'Hubot Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161616;
+    text-decoration: none;
+    border-bottom: 1px solid #161616;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.author-name-link:hover {
+    color: #4F4FFF;
+    border-bottom-color: #4F4FFF;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .writer-profile {
+        padding: 0 20px;
+    }
+    
+    .writer-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .writer-name {
+        font-size: 20px;
+    }
+    
+    .writer-posts-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .writer-profile-section {
+        padding: 80px 0 64px 0;
+    }
+    
+    .writer-profile {
+        padding: 0 20px;
+    }
+    
+    .writer-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .writer-name {
+        font-size: 20px;
+    }
+    
+    .writer-title {
+        font-size: 14px;
+    }
+    
+    .writer-description {
+        font-size: 14px;
+    }
+    
+    .writer-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .writer-posts-section {
+        padding: 48px 0 80px 0;
+    }
+    
+    .writer-posts-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    .writer-posts-list {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0;
+    }
+    
+    .writer-post-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .writer-profile {
+        padding: 0 16px;
+    }
+    
+    .writer-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .writer-name {
+        font-size: 20px;
+    }
+    
+    .writer-title {
+        font-size: 14px;
+    }
+    
+    .writer-description {
+        font-size: 14px;
+    }
+    
+    .writer-posts-title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    
+    .writer-post-title {
+        font-size: 18px;
+    }
+    
+    .writer-post-excerpt {
+        font-size: 13px;
+    }
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티 클라우드 전략 완전 해부 - Technova Place</title>
+    <link rel="stylesheet" href="styles.css?v=8.4">
+    <link rel="stylesheet" href="components/read-more-button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    
+    <!-- Hubot Sans Font -->
+    <style>
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Regular.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Medium.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-SemiBold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Bold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Grid -->
+    <div class="background-grid">
+        <div class="vertical-line"></div>
+        <div class="vertical-line-background"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Technova Place">
+                    <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24" />
+                </a>
+                <nav class="nav">
+                    <!-- Desktop Navigation -->
+                    <div class="nav-desktop">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="nav-menu-group">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a href="#" class="menu-link blog-menu" aria-haspopup="true" aria-expanded="false">
+                                        <span>Blog</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                            <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <div class="blog-dropdown">
+                                        <a href="index.html" class="blog-dropdown-item">All categories</a>
+                                        <a href="ai-machine-learning.html" class="blog-dropdown-item">AI & machine learning</a>
+                                        <a href="cybersecurity.html" class="blog-dropdown-item">Cybersecurity</a>
+                                        <a href="cloud-computing.html" class="blog-dropdown-item">Cloud computing</a>
+                                        <a href="data-analytics.html" class="blog-dropdown-item">Data & analytics</a>
+                                        <a href="team.html" class="blog-dropdown-item">Team</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="menu-link contact-menu">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-actions">
+                                <button class="cta-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation -->
+                    <div class="nav-mobile">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+                            <img src="asset/icon/Property 1=menu.svg" alt="메뉴" class="mobile-icon">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="header-container">
+                    <div class="header-content">
+                        <a href="index.html" class="logo" aria-label="Technova Place">
+                            <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24">
+                        </a>
+                        <nav class="nav">
+                            <div class="nav-mobile">
+                                <button class="icon-button search-btn" aria-label="검색">
+                                    <img src="asset/icon/Property 1=search2.svg" alt="검색" class="mobile-icon">
+                                </button>
+                                <button class="mobile-menu-close" aria-label="메뉴 닫기">
+                                    <img src="asset/icon/Property 1=close.svg" alt="닫기" class="mobile-close-icon">
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-sections">
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-item blog-dropdown-trigger">
+                            <span>Blog</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                                <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="mobile-blog-dropdown">
+                            <a href="index.html" class="mobile-menu-item">All categories</a>
+                            <a href="ai-machine-learning.html" class="mobile-menu-item">AI & machine learning</a>
+                            <a href="cybersecurity.html" class="mobile-menu-item">Cybersecurity</a>
+                            <a href="cloud-computing.html" class="mobile-menu-item">Cloud computing</a>
+                            <a href="data-analytics.html" class="mobile-menu-item">Data & analytics</a>
+                            <a href="team.html" class="mobile-menu-item">Team</a>
+                        </div>
+                        <a href="contact.html" class="mobile-menu-item">Contact</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-footer">
+                    <button class="mobile-subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <!-- Top 영역: 로고와 닫기 버튼 -->
+            <div class="search-top">
+                <div class="search-top-content">
+                    <div class="search-logo">
+                        <img src="asset/Logo.svg" alt="technova place" class="search-logo-img">
+                    </div>
+                    <button class="search-close-btn" aria-label="검색창 닫기">
+                        <img src="asset/icon/Property 1=close.svg" alt="닫기" width="24" height="24">
+                    </button>
+                </div>
+            </div>
+            <!-- Search + List 영역: 검색창과 검색결과 -->
+            <div class="search-main">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="주제나 키워드를 검색하세요" autocomplete="off" style="font-family: 'Input Mixed Font', 'Hubot Sans', 'Pretendard Variable', sans-serif;">
+                </div>
+                <!-- 검색어가 없을 때: Recent posts -->
+                <div class="search-recent" id="searchRecent">
+                    <h3 class="search-section-title">Recent posts</h3>
+                    <div class="search-results-list">
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_1.jpg" alt="Data & analytics">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Data & analytics</span>
+                                <h4 class="search-result-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_2.jpg" alt="Cloud computing">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Cloud computing</span>
+                                <h4 class="search-result-title">멀티 클라우드 전략 완전 해부</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_3.jpg" alt="Team">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Team</span>
+                                <h4 class="search-result-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 검색어가 있을 때: 검색 결과 -->
+                <div class="search-results" id="searchResults" style="display: none;">
+                    <h3 class="search-section-title">Search results</h3>
+                    <div class="search-results-list" id="searchResultsList">
+                        <!-- 검색 결과가 여기에 동적으로 추가됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="categories-container">
+            <div class="tabs">
+                <a href="index.html" class="tab">All categories</a>
+                <a href="ai-machine-learning.html" class="tab">AI & machine learning</a>
+                <a href="cybersecurity.html" class="tab">Cybersecurity</a>
+                <a href="cloud-computing.html" class="tab">Cloud computing</a>
+                <a href="data-analytics.html" class="tab">Data & analytics</a>
+                <a href="team.html" class="tab">Team</a>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="article-detail-main">
+        <!-- Article Section -->
+        <section class="article-section">
+            <div class="container">
+                <!-- Article Top -->
+                <div class="article-top">
+                    <div class="article-text">
+                        <div class="article-category-info">
+                            <span class="article-category-tag">Cloud Computing</span>
+                        </div>
+                        <h1 class="article-main-title">멀티 클라우드 전략 완전 해부</h1>
+                        <div class="article-author-info">
+                            <div class="author-profile">
+                                <div class="author-avatar">
+                                    <img src="image/profile3.png" alt="이민수" class="author-image">
+                                </div>
+                                <span class="author-name">이민수</span>
+                            </div>
+                            <span class="post-dot"></span>
+                            <span class="article-date">2025년 6월 3일</span>
+                        </div>
+                    </div>
+                    <div class="article-hero-image">
+                        <img src="image/image4.jpg" alt="Cloud Computing" class="hero-image">
+                    </div>
+                </div>
+
+                <!-- Article Note -->
+                <div class="article-note">
+                    <p class="article-content-paragraph">
+                        멀티 클라우드 전략은 현대 기업들이 클라우드 환경을 최적화하고 리스크를 분산하기 위해 채택하는 핵심 전략입니다. 이 글에서는 멀티 클라우드의 개념부터 실제 구현 방법, 그리고 기업들이 직면하는 도전과제와 해결책까지 종합적으로 분석해보겠습니다.
+                    </p>
+
+                    <h2 class="article-content-heading">멀티 클라우드의 정의와 필요성</h2>
+
+                    <p class="article-content-paragraph">
+                        멀티 클라우드는 두 개 이상의 클라우드 서비스 제공업체(CSP)의 서비스를 동시에 활용하는 전략을 의미합니다. AWS, Azure, Google Cloud Platform, 그리고 국내의 네이버 클라우드, KT 클라우드 등 다양한 플랫폼을 조합하여 사용하는 것이 특징입니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        단일 클라우드에 의존하는 것의 위험성을 고려할 때, 멀티 클라우드 전략은 비즈니스 연속성을 보장하고, 각 클라우드의 장점을 최대한 활용할 수 있게 해줍니다. 또한 벤더 종속성(Vendor Lock-in)을 방지하고, 비용 최적화의 기회를 제공합니다.
+                    </p>
+
+                    <h2 class="article-content-heading">멀티 클라우드 아키텍처 설계</h2>
+
+                    <p class="article-content-paragraph">
+                        효과적인 멀티 클라우드 전략을 위해서는 체계적인 아키텍처 설계가 필수적입니다. 각 클라우드의 특성을 고려한 워크로드 배치, 데이터 동기화 전략, 그리고 통합 관리 방안이 핵심 요소입니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        예를 들어, AWS의 강력한 컴퓨팅 성능과 Azure의 엔터프라이즈 통합 기능을 조합하여, 각각의 장점을 살린 하이브리드 아키텍처를 구축할 수 있습니다. 또한 Kubernetes나 Docker를 활용한 컨테이너 오케스트레이션을 통해 클라우드 간 애플리케이션 이식성을 확보할 수 있습니다.
+                    </p>
+
+                    <h2 class="article-content-heading">데이터 관리와 동기화 전략</h2>
+
+                    <p class="article-content-paragraph">
+                        멀티 클라우드 환경에서 가장 큰 도전과제 중 하나는 데이터 관리입니다. 여러 클라우드에 분산된 데이터의 일관성, 보안, 그리고 접근성을 보장해야 합니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        데이터 동기화를 위해서는 실시간 복제 기술이나 이벤트 기반 아키텍처를 활용할 수 있습니다. 또한 데이터 거버넌스 정책을 수립하여, 어떤 데이터를 어느 클라우드에 저장할지, 그리고 어떻게 백업할지에 대한 명확한 가이드라인을 제공해야 합니다.
+                    </p>
+
+                    <h2 class="article-content-heading">보안과 규정 준수</h2>
+
+                    <p class="article-content-paragraph">
+                        멀티 클라우드 환경에서는 보안 정책을 각 클라우드 제공업체의 특성에 맞게 조정해야 합니다. 통합된 보안 모니터링과 위협 대응 체계를 구축하는 것이 중요합니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        Identity and Access Management(IAM)를 통합하여 사용자 인증과 권한 관리를 중앙화하고, 각 클라우드의 네이티브 보안 기능을 최대한 활용해야 합니다. 또한 GDPR, HIPAA 등 규정 준수 요구사항을 각 클라우드 환경에서 충족할 수 있도록 정책을 수립해야 합니다.
+                    </p>
+
+                    <h2 class="article-content-heading">결론</h2>
+
+                    <p class="article-content-paragraph">
+                        멀티 클라우드 전략은 현대 기업들이 디지털 전환을 가속화하고 경쟁력을 확보하기 위한 필수적인 전략입니다. 단순히 여러 클라우드를 사용하는 것을 넘어서, 각 클라우드의 장점을 최대한 활용하고 리스크를 최소화하는 체계적인 접근이 필요합니다.
+                    </p>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+
+        <!-- Related Posts Section -->
+        <section class="related-posts-section">
+            <div class="container">
+                <h2 class="related-posts-title">Related posts</h2>
+                <div class="related-posts-list">
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=380&h=285&fit=crop" alt="Data & analytics">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Data & analytics</span>
+                                <h3 class="related-article-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">윤테크</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=380&h=285&fit=crop" alt="Cloud computing">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Cloud computing</span>
+                                <h3 class="related-article-title">멀티 클라우드 전략 완전 해부</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">김가람</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=380&h=285&fit=crop" alt="Team">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Team</span>
+                                <h3 class="related-article-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">테디킴</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+    </main>
+
+        <!-- Footer Component will be inserted here by footer.js -->
+
+    <script type="module" src="script.js"></script>
+    <script src="js/font-mixer.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html> 

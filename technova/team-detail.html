@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금전적 보상없이, 이벤트 바이럴이 가능할까? - Technova Place</title>
+    <link rel="stylesheet" href="styles.css?v=8.4">
+    <link rel="stylesheet" href="components/read-more-button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    
+    <!-- Hubot Sans Font -->
+    <style>
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Regular.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Medium.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-SemiBold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Bold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Grid -->
+    <div class="background-grid">
+        <div class="vertical-line"></div>
+        <div class="vertical-line-background"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Technova Place">
+                    <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24" />
+                </a>
+                <nav class="nav">
+                    <!-- Desktop Navigation -->
+                    <div class="nav-desktop">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="nav-menu-group">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a href="#" class="menu-link blog-menu" aria-haspopup="true" aria-expanded="false">
+                                        <span>Blog</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                            <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <div class="blog-dropdown">
+                                        <a href="index.html" class="blog-dropdown-item">All categories</a>
+                                        <a href="ai-machine-learning.html" class="blog-dropdown-item">AI & machine learning</a>
+                                        <a href="cybersecurity.html" class="blog-dropdown-item">Cybersecurity</a>
+                                        <a href="cloud-computing.html" class="blog-dropdown-item">Cloud computing</a>
+                                        <a href="data-analytics.html" class="blog-dropdown-item">Data & analytics</a>
+                                        <a href="team.html" class="blog-dropdown-item">Team</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="menu-link contact-menu">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-actions">
+                                <button class="cta-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation -->
+                    <div class="nav-mobile">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+                            <img src="asset/icon/Property 1=menu.svg" alt="메뉴" class="mobile-icon">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="header-container">
+                    <div class="header-content">
+                        <a href="index.html" class="logo" aria-label="Technova Place">
+                            <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24">
+                        </a>
+                        <nav class="nav">
+                            <div class="nav-mobile">
+                                <button class="icon-button search-btn" aria-label="검색">
+                                    <img src="asset/icon/Property 1=search2.svg" alt="검색" class="mobile-icon">
+                                </button>
+                                <button class="mobile-menu-close" aria-label="메뉴 닫기">
+                                    <img src="asset/icon/Property 1=close.svg" alt="닫기" class="mobile-close-icon">
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-sections">
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-item blog-dropdown-trigger">
+                            <span>Blog</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                                <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="mobile-blog-dropdown">
+                            <a href="index.html" class="mobile-menu-item">All categories</a>
+                            <a href="ai-machine-learning.html" class="mobile-menu-item">AI & machine learning</a>
+                            <a href="cybersecurity.html" class="mobile-menu-item">Cybersecurity</a>
+                            <a href="cloud-computing.html" class="mobile-menu-item">Cloud computing</a>
+                            <a href="data-analytics.html" class="mobile-menu-item">Data & analytics</a>
+                            <a href="team.html" class="mobile-menu-item">Team</a>
+                        </div>
+                        <a href="contact.html" class="mobile-menu-item">Contact</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-footer">
+                    <button class="mobile-subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <!-- Top 영역: 로고와 닫기 버튼 -->
+            <div class="search-top">
+                <div class="search-top-content">
+                    <div class="search-logo">
+                        <img src="asset/Logo.svg" alt="technova place" class="search-logo-img">
+                    </div>
+                    <button class="search-close-btn" aria-label="검색창 닫기">
+                        <img src="asset/icon/Property 1=close.svg" alt="닫기" width="24" height="24">
+                    </button>
+                </div>
+            </div>
+            <!-- Search + List 영역: 검색창과 검색결과 -->
+            <div class="search-main">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="주제나 키워드를 검색하세요" autocomplete="off" style="font-family: 'Input Mixed Font', 'Hubot Sans', 'Pretendard Variable', sans-serif;">
+                </div>
+                <!-- 검색어가 없을 때: Recent posts -->
+                <div class="search-recent" id="searchRecent">
+                    <h3 class="search-section-title">Recent posts</h3>
+                    <div class="search-results-list">
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_1.jpg" alt="Data & analytics">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Data & analytics</span>
+                                <h4 class="search-result-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_2.jpg" alt="Cloud computing">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Cloud computing</span>
+                                <h4 class="search-result-title">멀티 클라우드 전략 완전 해부</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_3.jpg" alt="Team">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Team</span>
+                                <h4 class="search-result-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 검색어가 있을 때: 검색 결과 -->
+                <div class="search-results" id="searchResults" style="display: none;">
+                    <h3 class="search-section-title">Search results</h3>
+                    <div class="search-results-list" id="searchResultsList">
+                        <!-- 검색 결과가 여기에 동적으로 추가됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="categories-container">
+            <div class="tabs">
+                <a href="index.html" class="tab">All categories</a>
+                <a href="ai-machine-learning.html" class="tab">AI & machine learning</a>
+                <a href="cybersecurity.html" class="tab">Cybersecurity</a>
+                <a href="cloud-computing.html" class="tab">Cloud computing</a>
+                <a href="data-analytics.html" class="tab">Data & analytics</a>
+                <a href="team.html" class="tab">Team</a>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="article-detail-main">
+        <!-- Article Section -->
+        <section class="article-section">
+            <div class="container">
+                <!-- Article Top -->
+                <div class="article-top">
+                    <div class="article-text">
+                        <div class="article-category-info">
+                            <span class="article-category-tag">Team</span>
+                        </div>
+                        <h1 class="article-main-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h1>
+                        <div class="article-author-info">
+                            <div class="author-profile">
+                                <div class="author-avatar">
+                                    <img src="image/Profile4.png" alt="정다은" class="author-image">
+                                </div>
+                                <span class="author-name">정다은</span>
+                            </div>
+                            <span class="post-dot"></span>
+                            <span class="article-date">2025년 5월 30일</span>
+                        </div>
+                    </div>
+                    <div class="article-hero-image">
+                        <img src="image/image6.jpg" alt="Team" class="hero-image">
+                    </div>
+                </div>
+
+                <!-- Article Note -->
+                <div class="article-note">
+                    <p class="article-content-paragraph">
+                        소셜미디어 시대에 바이럴 마케팅은 가장 효과적인 마케팅 전략 중 하나입니다. 하지만 많은 기업들이 금전적 보상 없이 바이럴을 일으키는 것이 가능한지 의문을 가지고 있습니다. 이 글에서는 비용 없이 바이럴을 일으키는 전략과 실제 사례를 통해 그 가능성을 탐구해보겠습니다.
+                    </p>
+
+                    <h2 class="article-content-heading">바이럴의 본질 이해하기</h2>
+
+                    <p class="article-content-paragraph">
+                        바이럴 마케팅의 핵심은 사람들이 자발적으로 콘텐츠를 공유하고 싶어하는 동기를 만드는 것입니다. 금전적 보상이 없어도 사람들이 공유하는 이유는 다양합니다. 재미있거나 유용한 정보, 감동적인 스토리, 또는 자신의 정체성을 표현할 수 있는 콘텐츠 등이 그 예입니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        성공적인 바이럴 캠페인의 공통점은 감정적 연결을 만드는 것입니다. 사람들은 자신이 느낀 감정을 다른 사람들과 공유하고 싶어합니다. 기쁨, 웃음, 감동, 분노, 놀라움 등 강한 감정을 자극하는 콘텐츠는 자연스럽게 공유됩니다.
+                    </p>
+
+                    <h2 class="article-content-heading">비용 없는 바이럴 전략</h2>
+
+                    <p class="article-content-paragraph">
+                        첫 번째 전략은 사용자 생성 콘텐츠(UGC)를 활용하는 것입니다. 고객들이 자발적으로 브랜드와 관련된 콘텐츠를 만들고 공유하도록 유도하는 것입니다. 이를 위해서는 브랜드가 고객과의 진정한 연결을 만들어야 합니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        두 번째 전략은 사회적 가치를 담은 캠페인을 만드는 것입니다. 환경 보호, 사회 공헌, 평등 등 사람들이 공감할 수 있는 가치를 담은 메시지는 자연스럽게 공유됩니다. 이는 단순한 제품 홍보가 아닌 사회적 메시지를 전달하는 것이 중요합니다.
+                    </p>
+
+                    <h2 class="article-content-heading">실제 성공 사례 분석</h2>
+
+                    <p class="article-content-paragraph">
+                        아이스 버킷 챌린지는 비용 없이 바이럴을 일으킨 가장 대표적인 사례입니다. 이 캠페인은 ALS(근위축성측삭경화증) 환자들을 돕기 위한 사회적 목적을 가지고 있었고, 참여자들이 자신의 도전 영상을 공유하도록 유도했습니다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        또 다른 사례는 다이슨의 '제임스 다이슨 어워드'입니다. 이는 젊은 엔지니어들의 혁신적인 아이디어를 지원하는 대회로, 참가자들이 자신의 프로젝트를 소셜미디어에 공유하도록 자연스럽게 유도했습니다.
+                    </p>
+
+                    <h2 class="article-content-heading">결론</h2>
+
+                    <p class="article-content-paragraph">
+                        금전적 보상 없이도 바이럴을 일으키는 것은 충분히 가능합니다. 핵심은 사람들이 자발적으로 공유하고 싶어하는 가치 있는 콘텐츠를 만드는 것입니다. 진정성, 감정적 연결, 사회적 가치가 바이럴의 핵심 요소입니다.
+                    </p>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+
+        <!-- Related Posts Section -->
+        <section class="related-posts-section">
+            <div class="container">
+                <h2 class="related-posts-title">Related posts</h2>
+                <div class="related-posts-list">
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=380&h=285&fit=crop" alt="Data & analytics">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Data & analytics</span>
+                                <h3 class="related-article-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">윤테크</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=380&h=285&fit=crop" alt="Cloud computing">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Cloud computing</span>
+                                <h3 class="related-article-title">멀티 클라우드 전략 완전 해부</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">김가람</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=380&h=285&fit=crop" alt="Team">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Team</span>
+                                <h3 class="related-article-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">테디킴</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+    </main>
+
+        <!-- Footer Component will be inserted here by footer.js -->
+
+    <script type="module" src="script.js"></script>
+    <script src="js/font-mixer.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html> 

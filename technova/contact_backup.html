@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Technova Place</title>
+    <link rel="stylesheet" href="styles.css?v=8.4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@400;500;600;700&family=Pretendard:wght@400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a66d68649bcb2469ecb73711b3294a9f&libraries=services"></script>
+</head>
+<body class="contact-page">
+    <!-- Background Grid -->
+    <div class="background-grid">
+        <div class="vertical-line-background"></div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Technova Place">
+                    <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24" />
+                </a>
+                <nav class="nav">
+                    <!-- Desktop Navigation -->
+                    <div class="nav-desktop">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="nav-menu-group">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a href="#" class="menu-link blog-menu" aria-haspopup="true" aria-expanded="false">
+                                        <span>Blog</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                            <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <div class="blog-dropdown">
+                                        <a href="index.html" class="blog-dropdown-item">All categories</a>
+                                        <a href="ai-machine-learning.html" class="blog-dropdown-item">AI & machine learning</a>
+                                        <a href="cybersecurity.html" class="blog-dropdown-item">Cybersecurity</a>
+                                        <a href="cloud-computing.html" class="blog-dropdown-item">Cloud computing</a>
+                                        <a href="data-analytics.html" class="blog-dropdown-item">Data & analytics</a>
+                                        <a href="team.html" class="blog-dropdown-item">Team</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="menu-link contact-menu">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-actions">
+                                <button class="cta-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Navigation -->
+                    <div class="nav-mobile">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <img src="asset/icon/Property 1=search2.svg" alt="검색" class="mobile-icon">
+                        </button>
+                        <button class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+                            <img src="asset/icon/Property 1=menu.svg" alt="메뉴" class="mobile-icon">
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- Search Overlay -->
+                <div class="search-overlay">
+                    <div class="search-container">
+                        <!-- Top 영역: 로고와 닫기 버튼 -->
+                        <div class="search-top">
+                            <div class="search-top-content">
+                                <div class="search-logo">
+                                    <img src="asset/Logo.svg" alt="technova place" class="search-logo-img">
+                                </div>
+                                <button class="search-close-btn" aria-label="검색창 닫기">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Search + List 영역: 검색창과 검색결과 -->
+                        <div class="search-main">
+                            <div class="search-input-wrapper">
+                                <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="text" class="search-input" placeholder="주제나 키워드를 검색하세요" autocomplete="off">
+                            </div>
+                            
+                            <!-- 검색어가 없을 때: Recent posts -->
+                            <div class="search-recent" id="searchRecent">
+                                <h3 class="search-section-title">Recent posts</h3>
+                                <div class="search-results-list">
+                                    <a href="#" class="search-result-item">
+                                        <div class="search-result-image">
+                                            <img src="image/basic_4-3_1.jpg" alt="Data & analytics">
+                                        </div>
+                                        <div class="search-result-content">
+                                            <span class="search-result-category">Data & analytics</span>
+                                            <h4 class="search-result-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="search-result-item">
+                                        <div class="search-result-image">
+                                            <img src="image/basic_4-3_2.jpg" alt="Cloud computing">
+                                        </div>
+                                        <div class="search-result-content">
+                                            <span class="search-result-category">Cloud computing</span>
+                                            <h4 class="search-result-title">멀티 클라우드 전략 완전 해부</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="search-result-item">
+                                        <div class="search-result-image">
+                                            <img src="image/basic_4-3_3.jpg" alt="Team">
+                                        </div>
+                                        <div class="search-result-content">
+                                            <span class="search-result-category">Team</span>
+                                            <h4 class="search-result-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- 검색어가 있을 때: 검색 결과 -->
+                            <div class="search-results" id="searchResults" style="display: none;">
+                                <h3 class="search-section-title">Search results</h3>
+                                <div class="search-results-list" id="searchResultsList">
+                                    <!-- 검색 결과가 여기에 동적으로 추가됩니다 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay">
+                    <div class="mobile-menu">
+                        <div class="mobile-menu-header">
+                            <div class="header-container">
+                                <div class="header-content">
+                                    <a href="index.html" class="logo" aria-label="Technova Place">
+                                        <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24">
+                                    </a>
+                                    <nav class="nav">
+                                        <div class="nav-mobile">
+                                            <button class="icon-button search-btn" aria-label="검색">
+                                                <img src="asset/icon/Property 1=search2.svg" alt="검색" class="mobile-icon">
+                                            </button>
+                            <button class="mobile-menu-close" aria-label="메뉴 닫기">
+                                                <img src="asset/icon/Property 1=close.svg" alt="닫기" class="mobile-close-icon">
+                            </button>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-content">
+                            <div class="mobile-menu-sections">
+                            <div class="mobile-menu-section">
+                                    <div class="mobile-menu-item blog-dropdown-trigger">
+                                            <span>Blog</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                                            <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                                            </svg>
+                                    </div>
+                                    <div class="mobile-blog-dropdown">
+                                        <a href="#" class="mobile-menu-item">All categories</a>
+                                                                    <a href="ai-machine-learning.html" class="mobile-menu-item">AI & machine learning</a>
+                            <a href="cybersecurity.html" class="mobile-menu-item">Cybersecurity</a>
+                            <a href="cloud-computing.html" class="mobile-menu-item">Cloud computing</a>
+                            <a href="data-analytics.html" class="mobile-menu-item">Data & analytics</a>
+                            <a href="team.html" class="mobile-menu-item">Team</a>
+                                    </div>
+                                    <a href="contact.html" class="mobile-menu-item">Contact</a>
+                            </div>
+                            </div>
+                            <div class="mobile-menu-footer">
+                                <button class="mobile-subscribe-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories (Hidden on Contact page) -->
+    <section class="categories" style="display: none;">
+        <div class="categories-container">
+            <div class="tabs">
+                <a href="index.html" class="tab active">All categories</a>
+                <a href="ai-machine-learning.html" class="tab">AI & machine learning</a>
+                <a href="cybersecurity.html" class="tab">Cybersecurity</a>
+                <a href="cloud-computing.html" class="tab">Cloud computing</a>
+                <a href="data-analytics.html" class="tab">Data & analytics</a>
+                <a href="team.html" class="tab">Team</a>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="contact-main">
+        <!-- Vertical Line Background -->
+        <div class="vertical-line-background"></div>
+        
+        <!-- Header Section -->
+        <section class="contact-header">
+            <div class="contact-header-container">
+                <h1 class="contact-title">Contact</h1>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <div class="contact-left">
+                    <h2 class="contact-heading">We're here to help you connect, collaborate, and create.</h2>
+                    <p class="contact-description">
+                        파트너십 제안, 기술 지원, 제품 관련 상담 등 다양한 문의를 환영합니다.<br>
+                        테크노바는 모든 고객 문의에 책임감 있게 응답하며,<br>
+                        접수된 요청은 관련 부서에서 검토 후 회신드립니다.
+                    </p>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form">
+                        <div class="form-inputs">
+                            <input type="text" class="form-input" placeholder="Name" required>
+                            <input type="email" class="form-input" placeholder="Email address" required>
+                            <textarea class="form-textarea" placeholder="Leave your message here..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="map-container">
+                <div class="map-header">
+                    <h3 class="map-title">Address</h3>
+                    <div class="contact-info">
+                        <div class="contact-phone">+82-2-1234-5678</div>
+                        <div class="contact-address">서울특별시 성동구 뚝섬로 123, 테크노빌딩 7층 (주)테크노바</div>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map-placeholder">
+                        <img src="image/Map sample.jpg" alt="Office Location Map" class="map-image">
+                    </div>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="asset/Logo.svg" alt="technova place" class="footer-logo-img">
+                    </div>
+                    <div class="footer-info">
+                        <p class="footer-phone"><span class="english-font">+</span><span class="number-font">82</span><span class="english-font">-</span><span class="number-font">2</span><span class="english-font">-</span><span class="number-font">1234</span><span class="english-font">-</span><span class="number-font">5678</span></p>
+                        <p class="footer-address">서울특별시 성동구 뚝섬로 123, 테크노빌딩 7층 (주)테크노바</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-links">
+                        <div class="footer-link-group">
+                            <a href="#" class="footer-link">이용약관</a>
+                            <a href="#" class="footer-link">개인정보처리방침</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-links">
+                        <div class="footer-link-group">
+                            <a href="#" class="footer-link footer-link-with-icon">
+                                <span>회사 홈페이지</span>
+                                <img src="asset/icon/Property 1=bx-arrow-link.svg" alt="외부 링크" class="link-icon">
+                            </a>
+                            <a href="#" class="footer-link footer-link-with-icon">
+                                <span>채용</span>
+                                <img src="asset/icon/Property 1=bx-arrow-link.svg" alt="외부 링크" class="link-icon">
+                            </a>
+                        </div>
+                    <div class="footer-back-to-top">
+                        <button class="back-to-top-btn" aria-label="맨 위로 이동">
+                            <span>Back to top</span>
+                                <img src="asset/icon/Property 1=top.svg" alt="맨 위로 이동" class="back-to-top-icon">
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                                    <p><span class="english-font">&copy;</span> <span class="number-font">2025</span> <span class="english-font">technova Inc. All Rights Reserved.</span></p>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script src="js/font-mixer.js"></script>
+    <script src="js/search.js"></script>
+    <script>
+        // Contact form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 여기에 폼 제출 로직을 추가할 수 있습니다
+            alert('메시지가 성공적으로 전송되었습니다!');
+        });
+
+        // DOM 로드 완료 후 실행
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🔧 Contact 페이지 DOM 로드 완료');
+            
+
+            
+            console.log('🎯 드롭다운 요소들:', {
+                blogMenu: !!blogMenu,
+                blogDropdown: !!blogDropdown,
+                arrowIcon: !!arrowIcon
+            });
+            
+            if (blogMenu && blogDropdown) {
+                console.log('✅ 드롭다운 요소들 찾음, 초기화 시작...');
+                
+                // 초기 드롭다운 위치 설정 (다른 페이지와 동일하게)
+                function setDropdownPosition() {
+                    const blogMenuRect = blogMenu.getBoundingClientRect();
+                    blogDropdown.style.left = (blogMenuRect.left + blogMenuRect.width - 191) + 'px';
+                    blogDropdown.style.top = '78px'; // 다른 페이지와 동일한 위치
+                    blogDropdown.style.position = 'fixed';
+                    blogDropdown.style.zIndex = '1000';
+                }
+                
+                // 페이지 로드 시 초기 위치 설정
+                setDropdownPosition();
+                
+                // 윈도우 리사이즈 시 위치 재설정
+                window.addEventListener('resize', setDropdownPosition);
+                
+                // 더 강력한 이벤트 처리
+                function handleBlogMenuClick(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    console.log('🔥 블로그 메뉴 클릭됨 (강화된 이벤트)');
+                    
+                    // 드롭다운 토글
+                    const isActive = blogMenu.classList.contains('active');
+                    console.log('📊 현재 상태:', { isActive });
+                    
+                    if (isActive) {
+                        // 드롭다운 닫기
+                        blogMenu.classList.remove('active');
+                        blogDropdown.classList.remove('active');
+                        blogMenu.setAttribute('aria-expanded', 'false');
+                        console.log('❌ 드롭다운 닫힘');
+                    } else {
+                        // 드롭다운 열기 - 위치 미리 설정
+                        setDropdownPosition();
+                        
+                        blogMenu.classList.add('active');
+                        blogDropdown.classList.add('active');
+                        blogMenu.setAttribute('aria-expanded', 'true');
+                        console.log('✅ 드롭다운 열림');
+                        
+
+                    }
+                    
+                    return false;
+                }
+                
+                // 여러 이벤트 리스너 등록
+                blogMenu.addEventListener('click', handleBlogMenuClick, true); // 캡처링 단계에서 실행
+                blogMenu.addEventListener('mousedown', function(e) {
+                    console.log('🖱️ 블로그 메뉴 mousedown');
+                }, true);
+                blogMenu.addEventListener('mouseup', function(e) {
+                    console.log('🖱️ 블로그 메뉴 mouseup');
+                }, true);
+                
+                // onclick 속성도 설정
+                blogMenu.onclick = handleBlogMenuClick;
+                
+                // 드롭다운 외부 클릭 시 닫기
+                document.addEventListener('click', function(e) {
+                    if (!blogMenu.contains(e.target) && !blogDropdown.contains(e.target)) {
+                        blogMenu.classList.remove('active');
+                        blogDropdown.classList.remove('active');
+                        blogMenu.setAttribute('aria-expanded', 'false');
+                        console.log('❌ 외부 클릭으로 드롭다운 닫힘');
+                    }
+                });
+                
+                // ESC 키로 드롭다운 닫기
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        blogMenu.classList.remove('active');
+                        blogDropdown.classList.remove('active');
+                        blogMenu.setAttribute('aria-expanded', 'false');
+                        console.log('❌ ESC 키로 드롭다운 닫힘');
+                    }
+                });
+                
+                console.log('✅ 드롭다운 초기화 완료');
+            } else {
+                console.error('❌ 드롭다운 요소들을 찾을 수 없음');
+            }
+            
+            // 검색 기능
+            const searchBtn = document.querySelector('.search-btn');
+            const searchOverlay = document.querySelector('.search-overlay');
+            const searchCloseBtn = document.querySelector('.search-close-btn');
+            
+            if (searchBtn && searchOverlay) {
+                searchBtn.addEventListener('click', function() {
+                    searchOverlay.classList.add('active');
+                    document.querySelector('.search-input').focus();
+                });
+            }
+            
+            if (searchCloseBtn && searchOverlay) {
+                searchCloseBtn.addEventListener('click', function() {
+                    searchOverlay.classList.remove('active');
+                });
+            }
+            
+            // 모바일 메뉴
+            const hamburgerBtn = document.querySelector('.hamburger-btn');
+            const navMobile = document.querySelector('.nav-mobile');
+            
+            if (hamburgerBtn) {
+                hamburgerBtn.addEventListener('click', function() {
+                    const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+                    hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
+                    // 모바일 메뉴 토글 로직을 여기에 추가할 수 있습니다
+                });
+            }
+        });
+    </script>
+    
+    <!-- Subscribe Popup Modal -->
+    <div class="subscribe-popup-overlay" id="subscribePopup">
+        <div class="subscribe-popup-container">
+            <div class="subscribe-popup-header">
+                <h2 class="subscribe-popup-title">콘텐츠 구독하기</h2>
+                <button class="subscribe-popup-close" id="closeSubscribePopup" aria-label="팝업 닫기">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="subscribe-popup-content">
+                <div class="subscribe-hero">
+                    <div class="subscribe-hero-image">
+                        <img src="asset/lightbulb_3d.png" alt="혁신적인 아이디어" class="hero-lightbulb">
+                    </div>
+                    <div class="subscribe-hero-content">
+                        <h3 class="subscribe-hero-title">최신 기술 인사이트를 받아보세요</h3>
+                        <p class="subscribe-hero-description">
+                            AI, 클라우드, 보안 등 최신 기술 트렌드와<br>
+                            실무 노하우를 이메일로 받아보세요.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="subscribe-form-section">
+                    <form class="subscribe-popup-form" id="subscribePopupForm">
+                        <div class="subscribe-input-group">
+                            <input 
+                                type="email" 
+                                class="subscribe-popup-input" 
+                                id="subscribePopupEmail" 
+                                placeholder="이메일 주소를 입력해주세요"
+                                required
+                            >
+                            <button type="submit" class="subscribe-popup-button">
+                                구독하기
+                            </button>
+                        </div>
+                        <p class="subscribe-privacy-text">
+                            구독 신청 시 <a href="#" class="privacy-link">개인정보처리방침</a>에 동의하는 것으로 간주됩니다.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

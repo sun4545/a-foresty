@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘날의 기업이 보안 전략을 근본적으로 재정의해야 하는 이유 - Technova Place</title>
+    <link rel="stylesheet" href="styles.css?v=8.4">
+    <link rel="stylesheet" href="components/read-more-button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    
+    <!-- Hubot Sans Font -->
+    <style>
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Regular.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Medium.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-SemiBold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Hubot Sans';
+            src: url('@Hubot_Sans/HubotSans-Bold.woff2') format('woff2'),
+                 url('@Hubot_Sans/HubotSans-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Grid -->
+    <div class="background-grid">
+        <div class="vertical-line"></div>
+        <div class="vertical-line-background"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Technova Place">
+                    <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24" />
+                </a>
+                <nav class="nav">
+                    <!-- Desktop Navigation -->
+                    <div class="nav-desktop">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="nav-menu-group">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a href="#" class="menu-link blog-menu" aria-haspopup="true" aria-expanded="false">
+                                        <span>Blog</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                            <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <div class="blog-dropdown">
+                                        <a href="index.html" class="blog-dropdown-item">All categories</a>
+                                        <a href="ai-machine-learning.html" class="blog-dropdown-item">AI & machine learning</a>
+                                        <a href="cybersecurity.html" class="blog-dropdown-item">Cybersecurity</a>
+                                        <a href="cloud-computing.html" class="blog-dropdown-item">Cloud computing</a>
+                                        <a href="data-analytics.html" class="blog-dropdown-item">Data & analytics</a>
+                                        <a href="team.html" class="blog-dropdown-item">Team</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="menu-link contact-menu">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-actions">
+                                <button class="cta-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation -->
+                    <div class="nav-mobile">
+                        <button class="icon-button search-btn" aria-label="검색">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="header-container">
+                    <div class="header-content">
+                        <a href="index.html" class="logo" aria-label="Technova Place">
+                            <img src="asset/Logo.svg" alt="technova place" class="logo-img" width="164" height="24">
+                        </a>
+                        <nav class="nav">
+                            <div class="nav-mobile">
+                                <button class="icon-button search-btn" aria-label="검색">
+                                    <img src="asset/icon/Property 1=search2.svg" alt="검색" class="mobile-icon">
+                                </button>
+                                <button class="mobile-menu-close" aria-label="메뉴 닫기">
+                                    <img src="asset/icon/Property 1=close.svg" alt="닫기" class="mobile-close-icon">
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-sections">
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-item blog-dropdown-trigger">
+                            <span>Blog</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                                <path d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="mobile-blog-dropdown">
+                            <a href="index.html" class="mobile-menu-item">All categories</a>
+                            <a href="ai-machine-learning.html" class="mobile-menu-item">AI & machine learning</a>
+                            <a href="cybersecurity.html" class="mobile-menu-item">Cybersecurity</a>
+                            <a href="cloud-computing.html" class="mobile-menu-item">Cloud computing</a>
+                            <a href="data-analytics.html" class="mobile-menu-item">Data & analytics</a>
+                            <a href="team.html" class="mobile-menu-item">Team</a>
+                        </div>
+                        <a href="contact.html" class="mobile-menu-item">Contact</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-footer">
+                    <button class="mobile-subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <!-- Top 영역: 로고와 닫기 버튼 -->
+            <div class="search-top">
+                <div class="search-top-content">
+                    <div class="search-logo">
+                        <img src="asset/Logo.svg" alt="technova place" class="search-logo-img">
+                    </div>
+                    <button class="search-close-btn" aria-label="검색창 닫기">
+                        <img src="asset/icon/Property 1=close.svg" alt="닫기" class="mobile-close-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Search + List 영역: 검색창과 검색결과 -->
+            <div class="search-main">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7222 16.9444C14.1586 16.9444 16.9444 14.1586 16.9444 10.7222C16.9444 7.28577 14.1586 4.5 10.7222 4.5C7.28577 4.5 4.5 7.28577 4.5 10.7222C4.5 14.1586 7.28577 16.9444 10.7222 16.9444Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19 19L15.1167 15.1172" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="주제나 키워드를 검색하세요" autocomplete="off" style="font-family: 'Input Mixed Font', 'Hubot Sans', 'Pretendard Variable', sans-serif;">
+                </div>
+                <!-- 검색어가 없을 때: Recent posts -->
+                <div class="search-recent" id="searchRecent">
+                    <h3 class="search-section-title">Recent posts</h3>
+                    <div class="search-results-list">
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_1.jpg" alt="Data & analytics">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Data & analytics</span>
+                                <h4 class="search-result-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_2.jpg" alt="Cloud computing">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Cloud computing</span>
+                                <h4 class="search-result-title">멀티 클라우드 전략 완전 해부</h4>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result-item">
+                            <div class="search-result-image">
+                                <img src="image/basic_4-3_3.jpg" alt="Team">
+                            </div>
+                            <div class="search-result-content">
+                                <span class="search-result-category">Team</span>
+                                <h4 class="search-result-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 검색어가 있을 때: 검색 결과 -->
+                <div class="search-results" id="searchResults" style="display: none;">
+                    <h3 class="search-section-title">Search results</h3>
+                    <div class="search-results-list" id="searchResultsList">
+                        <!-- 검색 결과가 여기에 동적으로 추가됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="categories-container">
+            <div class="tabs">
+                <a href="index.html" class="tab">All categories</a>
+                <a href="ai-machine-learning.html" class="tab">AI & machine learning</a>
+                <a href="cybersecurity.html" class="tab">Cybersecurity</a>
+                <a href="cloud-computing.html" class="tab">Cloud computing</a>
+                <a href="data-analytics.html" class="tab">Data & analytics</a>
+                <a href="team.html" class="tab">Team</a>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="article-detail-main">
+        <!-- Article Section -->
+        <section class="article-section">
+            <div class="container">
+                <!-- Article Top -->
+                <div class="article-top">
+                    <div class="article-text">
+                        <div class="article-category-info">
+                            <span class="article-category-tag">Cybersecurity</span>
+                        </div>
+                        <h1 class="article-main-title">오늘날의 기업이 보안 전략을 근본적으로 재정의해야 하는 이유</h1>
+                        <div class="article-author-info">
+                            <div class="author-profile">
+                                <div class="author-avatar">
+                                    <img src="image/profile1.png" alt="김소피" class="author-image">
+                                </div>
+                                <a href="writer-detail.html" class="author-name-link">김소피</a>
+                            </div>
+                            <span class="post-dot"></span>
+                            <span class="article-date">2025년 6월 7일</span>
+                        </div>
+                    </div>
+                    <div class="article-hero-image">
+                        <img src="image/image1.jpg" alt="Cybersecurity" class="hero-image">
+                    </div>
+                </div>
+
+                <!-- Article Note -->
+                <div class="article-note">
+                    <p class="article-content-paragraph">
+                        오랜 기간 동안 대부분의 기업은 '내부는 신뢰하고, 외부는 차단한다'는 경계 기반 보안 모델을 중심으로 IT 인프라를 구축해왔다. 하지만 원격 근무의 일상화, 클라우드 사용의 확산, 그리고 SaaS 환경의 확대는 더 이상 이러한 모델이 유효하지 않음을 증명하고 있다. 네트워크 내부라고 해서 반드시 안전하다는 보장은 없으며, 해커는 한 번의 침투만으로도 내부 전체에 접근할 수 있는 시대가 되었다.
+                    </p>
+
+                    <h2 class="article-content-heading">제로 트러스트란 무엇인가?</h2>
+
+                    <p class="article-content-paragraph">
+                        '절대 신뢰하지 말고 항상 검증하라'는 원칙에 기반한 제로 트러스트(Zero Trust)는 사용자, 기기, 네트워크 요청 등 모든 요소를 매 순간 검증함으로써 보안 체계를 강화하는 접근법이다. 접근 권한은 최소한으로 제한되며, 사용자의 위치나 역할이 아닌 정밀한 인증과 실시간 정책에 기반해 결정된다. 이 방식은 기존 보안 체계를 뛰어넘는 통제력을 제공하며, 내부자 위협이나 계정 탈취 시도에 효과적으로 대응할 수 있다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        사이버 공격의 피해는 점점 더 커지고 있으며, 특히 랜섬웨어와 공급망 공격은 기업의 명성과 생존을 위협하고 있다. 제로 트러스트는 단순한 기술 트렌드가 아니라, 보안의 새로운 표준이다. 특히 GDPR, ISO27001 등 각종 컴플라이언스 요구사항을 충족하기 위한 유연하고 확장 가능한 보안 프레임워크로 각광받고 있다.
+                    </p>
+
+                    <h2 class="article-content-heading">왜 지금 도입해야 하는가?</h2>
+
+                    <p class="article-content-paragraph">
+                        사이버 공격의 피해는 점점 더 커지고 있으며, 특히 랜섬웨어와 공급망 공격은 기업의 명성과 생존을 위협하고 있다. 제로 트러스트는 단순한 기술 트렌드가 아니라, 보안의 새로운 표준이다. 특히 GDPR, ISO27001 등 각종 컴플라이언스 요구사항을 충족하기 위한 유연하고 확장 가능한 보안 프레임워크로 각광받고 있다.
+                    </p>
+
+                    <h2 class="article-content-heading">도입을 위한 전략적 접근</h2>
+
+                    <p class="article-content-paragraph">
+                        제로 트러스트는 단순히 새로운 보안 솔루션을 도입한다고 해서 구현되는 개념이 아니다. 조직 내 데이터 흐름을 면밀히 파악하고, 중요 자산과 사용자의 행동 패턴을 분석한 후, 이에 기반한 정책을 단계적으로 수립해야 한다. SSO(Single Sign-On), MFA(Multi-Factor Authentication), 마이크로 세그멘테이션 등의 기술을 병행적으로 도입하는 것이 권장된다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        사이버 공격의 피해는 점점 더 커지고 있으며, 특히 랜섬웨어와 공급망 공격은 기업의 명성과 생존을 위협하고 있다. 제로 트러스트는 단순한 기술 트렌드가 아니라, 보안의 새로운 표준이다. 특히 GDPR, ISO27001 등 각종 컴플라이언스 요구사항을 충족하기 위한 유연하고 확장 가능한 보안 프레임워크로 각광받고 있다.
+                    </p>
+
+                    <p class="article-content-paragraph">
+                        사이버 공격의 피해는 점점 더 커지고 있으며, 특히 랜섬웨어와 공급망 공격은 기업의 명성과 생존을 위협하고 있다. 제로 트러스트는 단순한 기술 트렌드가 아니라, 보안의 새로운 표준이다.
+                    </p>
+
+                    <h2 class="article-content-heading">결론</h2>
+
+                    <p class="article-content-paragraph">
+                        이제 제로 트러스트는 '선택 가능한 옵션'이 아니다. 보안 위협이 더욱 교묘하고 고도화되는 상황에서, 기업은 선제적으로 보안 체계를 재설계해야 한다. 신뢰 기반이 아닌 검증 기반의 사고방식이야말로 미래의 안전한 디지털 비즈니스 운영을 위한 필수 조건이다.
+                    </p>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+
+        <!-- Related Posts Section -->
+        <section class="related-posts-section">
+            <div class="container">
+                <h2 class="related-posts-title">Related posts</h2>
+                <div class="related-posts-list">
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=380&h=285&fit=crop" alt="Data & analytics">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Data & analytics</span>
+                                <h3 class="related-article-title">데이터 레이크 대 데이터 웨어하우스 : 과연 누가 승자일까</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">윤테크</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=380&h=285&fit=crop" alt="Cloud computing">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Cloud computing</span>
+                                <h3 class="related-article-title">멀티 클라우드 전략 완전 해부</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">김가람</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-detail.html" class="related-article">
+                        <div class="related-article-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=380&h=285&fit=crop" alt="Team">
+                        </div>
+                        <div class="related-article-content">
+                            <div class="related-article-info">
+                                <span class="related-article-category">Team</span>
+                                <h3 class="related-article-title">금전적 보상없이, 이벤트 바이럴이 가능할까?</h3>
+                            </div>
+                            <div class="related-article-meta">
+                                <span class="related-article-author">테디킴</span>
+                                <span class="post-dot"></span>
+                                <span class="related-article-date">2025년 6월 7일</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="deco-left"></div>
+            <div class="deco-right"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="asset/Logo.svg" alt="technova place" class="footer-logo-img">
+                    </div>
+                    <div class="footer-info">
+                        <p class="footer-phone"><span class="english-font">+</span><span class="number-font">82</span><span class="english-font">-</span><span class="number-font">2</span><span class="english-font">-</span><span class="number-font">1234</span><span class="english-font">-</span><span class="number-font">5678</span></p>
+                        <p class="footer-address">서울특별시 성동구 뚝섬로 123, 테크노빌딩 7층 (주)테크노바</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-links">
+                        <div class="footer-link-group">
+                            <a href="#" class="footer-link">이용약관</a>
+                            <a href="#" class="footer-link">개인정보처리방침</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-links">
+                        <div class="footer-link-group">
+                            <a href="#" class="footer-link footer-link-with-icon">
+                                <span>회사 홈페이지</span>
+                                <img src="asset/icon/Property 1=bx-arrow-link.svg" alt="외부 링크" class="link-icon">
+                            </a>
+                            <a href="#" class="footer-link footer-link-with-icon">
+                                <span>채용</span>
+                                <img src="asset/icon/Property 1=bx-arrow-link.svg" alt="외부 링크" class="link-icon">
+                            </a>
+                        </div>
+                        <div class="footer-back-to-top">
+                            <button class="back-to-top-btn" aria-label="맨 위로 이동">
+                                <span>Back to top</span>
+                                <img src="asset/icon/Property 1=top.svg" alt="맨 위로 이동" class="back-to-top-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><span class="english-font">&copy;</span> <span class="number-font">2025</span> <span class="english-font">technova Inc. All Rights Reserved.</span></p>
+            </div>
+        </div>
+        <div class="deco-left"></div>
+        <div class="deco-right"></div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script src="js/font-mixer.js"></script>
+    <script src="js/search.js"></script>
+    <script src="article-detail.js"></script>
+</body>
+</html>

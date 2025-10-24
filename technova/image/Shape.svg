@@ -1,0 +1,9 @@
+<svg width="615" height="462" viewBox="0 0 615 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="hero-shape-mask">
+      <rect width="615" height="462" fill="black"/>
+      <path d="M0 8.00001C0 3.58173 3.58172 0 8 0H606.51C610.924 0 614.504 3.57572 614.51 7.99015L614.99 397.99C614.996 402.412 611.412 406 606.99 406H567C562.582 406 559 409.582 559 414V454C559 458.418 555.418 462 551 462H537.625H460.75H307H7.99999C3.58172 462 0 458.418 0 454V8.00001Z" fill="white"/>
+    </mask>
+  </defs>
+  <rect width="615" height="462" fill="white" mask="url(#hero-shape-mask)"/>
+</svg>
